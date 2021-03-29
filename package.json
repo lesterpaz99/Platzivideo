@@ -1,0 +1,16 @@
+{
+  "name": "platzivideo",
+  "version": "1.0.0",
+  "description": "A frontend Development Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "BEM"
+  ],
+  "author": "Obed Paz <lesterpaz99@gmail.com>",
+  "license": "MIT"
+}
