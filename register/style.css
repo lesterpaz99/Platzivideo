@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #04f06a;
+    background-image: linear-gradient(to top, #04f06a, #8377d1);
+    font-size: 1.6rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto 1fr 70px;
+    grid-template-areas: "header"
+                        "register"
+                        "footer";
+}
+
+.header {
+    /* height: 60px; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.header__logo {
+    width: 180px;
+}
+
+section.register {
+    grid-area: register;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .register-container {
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    height: auto;
+    min-height: 678px;
+    padding: 68px 60px 40px;
+    min-width: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.register-container__title {
+    font-size: 22px;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__textbox {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    padding: 16px;
+    color: #fff;
+    width: 100%;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.register__button {
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    letter-spacing: .6px;
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0 28px;
+    cursor: pointer;
+}
+
+.footer .footer-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 380px;
+    height: 100%;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.register__login {
+    text-align: center;
+}
