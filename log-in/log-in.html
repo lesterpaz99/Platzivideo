@@ -7,41 +7,7 @@
     <title>PlatziVideo - Log in</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Mulish', sans-serif;
-        }
-
-        :root {
-            font-size: 62.5%;
-        }
-
-        body {
-            background-color: #74EBD5;
-            background-image: linear-gradient(90deg, #74EBD5, #9FACE6);
-            font-size: 1.6rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .header {
-            /* height: 60px; */
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header__logo {
-            width: 180px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -50,5 +16,41 @@
         </figure>
         <!-- <a href="https://icons8.com/icon/33901/cat-profile">Cat Profile icon by Icons8</a> -->
     </header>
+    <section class="login">
+        <section class="login-container">
+            <h2 class="login-container__title">Log in</h2>
+            <form action="">
+                <input class="login__textbox" type="text" placeholder="Email">
+                <input class="login__textbox" type="password" placeholder="Password">
+                <label>
+                    <input class="login__button" type="button" value="Login">
+                </label>
+                <div class="login__remember-me-container">
+                    <label>
+                        <input class="login__checkbox" type="checkbox"> Remember me
+                    </label>
+                    <a class="login__forgot-password link" href="#">I forgot my password</a>
+                </div>
+            </form>
+            <section class="login-container__social">
+                <div class="login__with-social-media">
+                    <img src="../assets/google-icon.png" alt="">
+                    <p>Login with Google</p>
+                </div>
+                <div class="login__with-social-media">
+                    <img src="../assets/twitter-icon.png" alt="">
+                    <p>Login with Twitter</p>
+                </div>
+            </section>
+            <p class="login-container__register">You have no account <a class="link" href="#">Register</a></p>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer-details">
+            <a class="link" href="#">Terms of use</a>
+            <a class="link" href="#">Privacy policy</a>
+            <a class="link" href="#">Help center</a>
+        </div>
+    </footer>
 </body>
 </html>
