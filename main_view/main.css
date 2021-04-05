@@ -117,6 +117,9 @@ section.search {
 ::placeholder {
     color: #fff;
 }
+.input:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 .categories-title {
     font-size: 16px;
@@ -125,7 +128,7 @@ section.search {
 }
 
 section.carousel {
-    height: 400px;
+    height: 390px;
     width: 100%;
     position: relative;
     padding-left: 30px;
