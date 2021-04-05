@@ -14,6 +14,19 @@ body {
     background-image: linear-gradient(90deg, #74EBD5, #9FACE6);
     font-size: 1.6rem;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
 
 img {
     max-width: 100%;
@@ -116,6 +129,7 @@ section.carousel {
     width: 100%;
     position: relative;
     padding-left: 30px;
+    margin-bottom: 40px;
 }
 
 .carousel__container {
@@ -156,6 +170,9 @@ section.carousel {
 .carousel__container:hover .carousel-item:hover {
     transform: scale(1.5);
     opacity: 1;
+}
+.carousel__container::-webkit-scrollbar {
+    height: 8px;
 }
 
 .carousel-item__img {
